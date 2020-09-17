@@ -204,3 +204,10 @@ button:hover {
   border-color: #18bfef;
   transition: all 0.3s ease 0s;
 }
+
+@media screen and (max-width: 250px) {
+  button {
+    padding: 5px 10px;
+    margin: 5px;
+  }
+}
