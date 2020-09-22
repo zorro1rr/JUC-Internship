@@ -16,33 +16,40 @@
   </head>
   <body>
     <section id="content" role="main">
-      <form>
+      <form id="contactForm">
         <div class="inputDivs">
           <h1>Contact Us</h1>
         </div>
         <div class="inputDivs">
           <label for="name" class="labels">Name</label>
-          <input type="text" id="name" class="inputs" />
+          <input type="text" id="name" class="inputs" name="name" required />
         </div>
         <div class="inputDivs">
           <label for="email" class="labels">Email</label>
-          <input type="email" id="email" class="inputs" />
+          <input type="email" id="email" class="inputs" name="email" required />
         </div>
         <div class="inputDivs">
-          <label for="birth date" class="labels">Birth date</label>
-          <input type="date" id="date" class="inputs" />
+          <label for="date" class="labels">Birth date</label>
+          <input
+            type="date"
+            id="date"
+            class="inputs"
+            name="birthDate"
+            required
+          />
         </div>
         <div class="inputDivs">
           <span>
-            <input type="checkbox" id="agree" />
-            <label for="contact terms"
-              >I agree to be contacted via email.</label
-            >
+            <input type="checkbox" id="agree" name="emailConsent" required />
+            <label for="agree">I agree to be contacted via email.</label>
           </span>
         </div>
+        <div id="message"></div>
         <div id="buttons">
-          <button type="button" id="clear">Clear</button>
-          <button type="button" id="submit">Submit</button>
+          <button type="button" id="clear" class="buttons">Clear</button>
+          <button type="submit" value="Submit" id="submit" class="buttons">
+            Submit
+          </button>
         </div>
       </form>
     </section>
